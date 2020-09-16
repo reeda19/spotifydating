@@ -1,12 +1,10 @@
-import requests
-import json
 import pandas as pd
-import sys
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-scope = 'user-top-read'
+scope = 'user-top-read' #how much we are allowed to see from user
 
+# these should be delted and instead added to ENV VARs
 client_id = 'eb9a37f93d5148e28e113134d65d6c08'
 client_secret = '29d3cde540304c43b72e8b344c605f63'
 redirect_uri = 'project-songbird-login://callback'
